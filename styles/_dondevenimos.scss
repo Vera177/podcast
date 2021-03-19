@@ -1,0 +1,65 @@
+/*Sección imagen celular más texto */
+
+/* Versión mobile */
+
+.nosotros {
+    z-index: 3;
+    position: relative;
+
+    h2 {
+        font-family: IBMPlexSans;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+    }
+}
+
+.celular {
+    width: 90%;
+}
+
+
+/*tablet*/
+
+@media screen and(min-width:414px){
+    
+    
+    
+    .nosotros {
+        margin-left: 100px;
+        margin-right: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+    
+        h2 {
+            font-size: 48px;
+            color: #060A24;
+            letter-spacing: 0;
+        }
+    }
+
+    .celular {
+        width: 100%;
+    }
+}
+
+/* Versión desktop */
+
+@media screen and(min-width:769px){
+
+    .nosotros {
+        margin-left: 100px;
+        margin-right: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+
+    .celular {
+        width: 100%;
+    }
+}

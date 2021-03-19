@@ -1,0 +1,22 @@
+@import "./styles/variablesmixins";
+@import "./styles/header";
+@import "./styles/dondevenimos";
+@import "./styles/episodios";
+@import "./styles/footer";
+@import "./styles/invitadosfotos";
+@import "./styles/main";
+
+
+body {
+    margin: 0;
+    padding:0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h2{
+    font-family: 'IBM Plex Sans', sans-serif;
+}

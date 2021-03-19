@@ -1,0 +1,36 @@
+/*Sección invitados estelares*/
+
+/*mobile version*/
+
+.galeria {
+display:grid;
+grid-template-columns: 1fr;
+width: 100%;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*tablet*/
+
+@media screen and(min-width:414px){
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 100%;
+    }
+
+    .invitados h2 {
+        margin-left: 200px;
+    }
+}
+
+/*Desktop version*/
+
+@media screen and(min-width:769px){
+
+    
+}
