@@ -1,0 +1,141 @@
+/* Versión mobile */
+
+header {
+    position: relative;
+    padding: 8px;
+}
+
+/* Ocultar checkbox */
+
+#hamburguesa {
+    display: none;
+    justify-items: end;
+}
+
+/*Mostrar menú hamburguesa*/
+
+.iconohamburguesa {
+    /* display: block; */
+    right: 18px;
+    top: 18px;
+    position: absolute;
+
+    .fa-times {
+        display: none;
+    }
+}
+    
+/* Intercambio abrir cerrar del menú */
+
+#hamburguesa ~ label .cerrar {
+    display: none;
+}
+
+.hamitems {
+    display: none;
+    background: #0000EC;
+
+    li {
+        display: block;
+    }
+
+    a {
+        padding: 10px;
+        text-decoration: none;
+        text-align: right;
+        color: #FFFFFF;
+    }
+
+    li:visited {
+        font-family: IBMPlexMono;
+        font-size: 16px;
+        color: rgba(6,10,36,0.56);
+        letter-spacing: 0;
+        line-height: 28px;
+    }
+}
+
+
+#hamburguesa:checked {
+
+    ~ label .fa-bars {
+    display: none;
+    }
+
+    ~ label .fa-times {
+    display: block;
+    }
+
+}
+
+/* Posición vertical de los ítems del menú */
+
+#hamburguesa:checked ~ .hamitems {
+    display: flex;
+}
+
+/*logo*/
+
+.logo {
+    position: relative;
+    top: 8px;
+}
+/*tablet*/
+@media screen and(min-width:414px){
+    .logo {
+        width: 36px;
+        height: 36px;
+        left: 100px;
+        top: 22px;
+        position: initial;
+    }
+
+    /*Contenedor*/
+
+    #hammenu {
+        width: 100%;
+    }
+
+    /*Esconder hamburguesa*/
+
+    .iconohamburguesa {
+        display: none; 
+    }
+
+    .checkboxout {
+        display: none;
+    }
+
+    /* Ítems horizontales del menú*/
+
+    .hamitems {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-color: white;
+    
+        a {
+        color: black;
+        font-family: IBMPlexMono;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
+        }
+
+        li {
+        display: inline-block;
+        list-style: none;
+        }
+    }
+
+    li:hover {
+        text-decoration: line-through aquamarine;
+    }
+}
+
+/* Versión desktop*/
+
+@media screen and(min-width:769px){
+}
