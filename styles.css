@@ -139,6 +139,10 @@ header {
   line-height: 42px;
 }
 
+.nosotros p {
+  margin: 8px;
+}
+
 .celular {
   width: 90%;
 }
