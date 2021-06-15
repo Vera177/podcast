@@ -127,6 +127,10 @@ header {
   position: relative;
 }
 
+.nosotros .texto {
+  margin-left: 5px;
+}
+
 .nosotros h2 {
   font-family: IBMPlexSans;
   font-size: 36px;
@@ -250,6 +254,7 @@ header {
     font-family: IBMPlexSans;
     font-size: 48px;
     letter-spacing: 0;
+    margin-left: 200px;
   }
 }
 
@@ -287,6 +292,7 @@ header {
 
 .topicos h2 {
   font-size: 36px;
+  margin-left: 5px;
 }
 
 .topicos .iconotexto {
