@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crear gifos</title>
+</head>
+<body id="dark">
+
+    <!-- Header section -->
+
+    <header class="headerContainer">
+        <div class="logos">
+            <a id="logoDesktopNormal" href="index.html"><img id="imageLogo" src="./assets/logo-mobile.svg" alt="logogifos"></a>
+        </div>
+        <nav class="items">
+            <a href="#" id="btnSwitch" >MODO NOCTURNO</a>
+            <a href="favourites.html">FAVORITOS</a>
+            <a href="myGifs.html">MIS GIFOS</a>
+            <a href="createOwnGifs.html"><img src="./assets/button-crear-gifo.svg" id="createGifs" alt="creargifs"></a>
+        </nav>
+    </header>
+
+    <!-- video section -->
+    <section class="videoSection">
+       
+        <div class="videoContainer" id="videoContainer">
+            <div class="cameraImageElements">
+                <img src="./assets/camara.svg" alt="">
+                <img src="./assets/element-luz-camara.svg" alt="">
+            </div>
+            <div class="topLeft"></div>
+            <div class="topRight"></div>
+            <div class="bottomRight"></div>
+            <div class="bottomLeft"></div>
+            
+            <img id="resultRecording" class="hideSomething">
+            <video id="videoElement" class="videoElement"></video>
+            <h2 class="titleCreateGifo" id="titleCreateGifo">Aquí podrás <br> crear tus propios <span>GIFOS</span></h2>
+            <p class="subtitleCreateGifo" id="subtitleCreateGifo">¡Crea tu GIFO en sólo 3 pasos! <br>(sólo necesitas una cámara para grabar un video)</p>
+        </div>
+        <div class="buttonAndMovie">
+            <button class="step1">1</button>
+            <button class="step2">2</button>
+            <button class="step3">3</button>
+            <img src="./assets/pelicula.svg" alt="carretel de película">
+        </div>
+        <div class="longLine"></div>
+                
+        <button class="start" id="start">COMENZAR</button>
+
+    </section>
+
+      <!-- Footer -->
+      <footer class="footerContainer">
+        <div class="socialMedia">
+            <p class="share">Compartir en:</p>
+            <a class="normal" href="https://www.facebook.com/"><img src="./assets/icon_facebook.svg" alt="Facebook"></a>
+            <a class="normal" href="https://twitter.com/home"><img src="./assets/icon-twitter.svg" alt="Twitter"></a>
+            <a class="normal" href="https://www.instagram.com/"><img src="./assets/icon_instagram.svg" alt="Instagram"></a>
+        </div>
+        <p class="copyright">© GIFOS 2021 All Rights Reserved.</p>
+    </footer>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="js/createMyOwnGifs.js"></script>
+    <script src="js/nocturnemode.js"></script>
+</body>
+</html>

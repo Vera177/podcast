@@ -1,0 +1,906 @@
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90px;
+  margin-bottom: 4px;
+}
+
+.headerContainer #logoDesktopNormal {
+  width: 68px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  left: 156px;
+  top: 18px;
+}
+
+.headerContainer .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  right: 156px;
+  top: 18px;
+  position: absolute;
+}
+
+.headerContainer .items a {
+  text-decoration: none;
+  font-family: Montserrat-Bold, sans-serif;
+  color: #572EE5;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.headerContainer .items a:hover {
+  border-bottom: 2px solid #50E3C2;
+}
+
+.headerContainer .items a:active {
+  color: #9CAFC3;
+}
+
+.headerContainer .logos {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body.dark .headerContainer a {
+  color: #FFFFFF;
+}
+
+/* Searching */
+.results ul {
+  margin: 0;
+  padding: 0;
+}
+
+.results ul li {
+  list-style: none;
+  border-radius: 3px;
+  padding: 8px 12px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  color: #9CAFC3;
+  text-align: left;
+}
+
+.searchSuggestionsMagnifyLens {
+  width: 15.8px;
+  height: 15.8px;
+}
+
+.results ul li:hover {
+  background: #ececec;
+  cursor: pointer;
+}
+
+.lineGray {
+  border-bottom: 1px solid grey;
+  opacity: 0.5;
+  width: 505px;
+  height: 3px;
+  margin: auto;
+}
+
+.title {
+  margin-top: 76px;
+  text-align: center;
+  font-family: Montserrat-Bold;
+  color: #572EE5;
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.title span {
+  color: #50E3C2;
+}
+
+.helloImg {
+  margin: auto;
+  display: block;
+  margin-top: 24px;
+}
+
+.searchSectionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.dark .searchSectionContainer h1 {
+  color: #FFFFFF;
+}
+
+.searchContainer {
+  text-align: center;
+  position: relative;
+  border: 1px solid #572EE5;
+  border-radius: 27px;
+}
+
+body.dark .searchContainer {
+  border: 1px solid #FFFFFF;
+}
+
+.searchContainer .searchInput {
+  border-radius: 27px;
+  color: #000000;
+  height: 50px;
+  width: 551px;
+  text-align: center;
+  z-index: 0;
+  border: none;
+  outline: none;
+}
+
+body.dark .searchContainer .searchInput {
+  background: #37383C 100%;
+  color: #FFFFFF;
+}
+
+.searchContainer .searchIcon {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  z-index: 1;
+  right: 20px;
+  bottom: 15px;
+}
+
+.titleSearchedGifs {
+  font-family: Montserrat-Bold;
+  color: #572EE5;
+  text-align: center;
+  font-size: 35px;
+  line-height: 30px;
+  margin-top: 81.9px;
+  margin-bottom: 59px;
+}
+
+body.dark .titleSearchedGifs {
+  color: #FFFFFF;
+}
+
+.thinLineHidden {
+  display: none;
+}
+
+.thinLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 55px;
+  opacity: 0.5;
+  height: 0.1px;
+}
+
+.thinLine hr {
+  width: 338px;
+  border: 1px solid #9CAFC3;
+}
+
+.gifCardsFounded:empty {
+  display: none;
+}
+
+.gifCardsFounded {
+  margin-left: 156px;
+  margin-right: 157px;
+  margin-bottom: 78px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (260px)[4];
+      grid-template-columns: repeat(4, 260px);
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.gifCardsFounded img {
+  width: 100%;
+  height: 200px;
+}
+
+.gifCardsFounded .overlayGifsSearch {
+  display: none;
+}
+
+.gifCardsFounded .cardGifoSearch:hover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gifCardsFounded .cardGifoSearch:hover .overlayGifsSearch {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: RGBA(87, 46, 229, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.gifCardsFounded .cardGifoSearch:hover .overlayGifsSearch .infoTextGifs {
+  position: absolute;
+  bottom: 51px;
+  left: 15px;
+  color: #FFFFFF;
+}
+
+.gifCardsFounded .cardGifoSearch:hover .overlayGifsSearch .infoTextGifs :first-child {
+  font-family: Roboto-Regular;
+  font-size: 15px;
+}
+
+.gifCardsFounded .cardGifoSearch:hover .overlayGifsSearch .infoTextGifs :nth-child(2) {
+  font-family: Roboto-Bold;
+  font-size: 16px;
+}
+
+.gifCardsFounded .cardGifoSearch:hover .overlayGifsSearch .buttonsCard {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.gifCardsFounded .cardGifoSearch:hover .overlayGifsSearch button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+}
+
+/* Trending searchs*/
+.none {
+  display: none;
+}
+
+.trending {
+  font-family: Montserrat-Bold;
+  color: #572EE5;
+  text-align: center;
+  line-height: 25px;
+  margin-top: 73px;
+  margin-bottom: 95px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.trending .subtitle {
+  margin-top: 7px;
+}
+
+body.dark .trending .subtitle {
+  color: #FFFFFF;
+}
+
+body.dark .trending .trendingSearchs {
+  color: #FFFFFF;
+}
+
+/* Trending gifs */
+.trendingGifos {
+  background: #F3F5F8;
+  height: 640px;
+}
+
+body.dark .trendingGifos {
+  background: #222326 100%;
+}
+
+body.dark .trendingGifos .titleGIFOS {
+  color: #FFFFFF;
+}
+
+body.dark .trendingGifos .checkThemOut {
+  color: #FFFFFF;
+}
+
+.titleGIFOS {
+  font-family: Montserrat-Bold;
+  font-size: 25px;
+  color: #572EE5;
+  text-align: center;
+  line-height: 30px;
+  padding-top: 67px;
+}
+
+.checkThemOut {
+  font-family: Roboto-Regular;
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 53px;
+}
+
+.sliders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sliders .buttonSliderLeft,
+.sliders .buttonSliderRight {
+  border: none;
+  background: transparent;
+  display: inline-block;
+  margin: 16px;
+}
+
+.sliders .gifSources {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-rows: 250px;
+      grid-template-rows: 250px;
+  -ms-grid-columns: (357px)[15];
+      grid-template-columns: repeat(15, 357px);
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 1117px;
+  height: 270px;
+}
+
+.sliders .gifSources li > img {
+  width: 100%;
+  height: 100%;
+}
+
+.sliders .overlay {
+  display: none;
+}
+
+.sliders .cardGifo:hover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sliders .cardGifo:hover .overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: RGBA(87, 46, 229, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.sliders .cardGifo:hover .overlay .infoTextGifs {
+  position: absolute;
+  bottom: 51px;
+  left: 15px;
+  color: #FFFFFF;
+}
+
+.sliders .cardGifo:hover .overlay .infoTextGifs :first-child {
+  font-family: Roboto-Regular;
+  font-size: 15px;
+}
+
+.sliders .cardGifo:hover .overlay .infoTextGifs :nth-child(2) {
+  font-family: Roboto-Bold;
+  font-size: 16px;
+}
+
+.sliders .cardGifo:hover .overlay .buttonsCard {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.sliders .cardGifo:hover .overlay button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+}
+
+.footerContainer {
+  margin-top: 49.5px;
+  margin-bottom: 41.5px;
+  margin-left: 156px;
+  margin-right: 158px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body.dark .footerContainer p {
+  color: #FFFFFF;
+}
+
+body.dark .footerContainer .socialMedia {
+  color: #FFFFFF;
+}
+
+.footerContainer .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 19px;
+  margin-right: 19px;
+}
+
+body {
+  background: #FFFFFF;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+body.dark {
+  background: #37383C 100%;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+/*Video container*/
+.videoContainer {
+  width: 688px;
+  height: 390px;
+  display: block;
+  margin: auto;
+  border: 1px solid #572EE5;
+  position: relative;
+}
+
+.videoContainer .topLeft {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-top: 1px solid #50E3C2;
+  border-left: 1px solid #50E3C2;
+  width: 27px;
+  height: 25px;
+}
+
+.videoContainer .topRight {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-top: 1px solid #50E3C2;
+  border-right: 1px solid #50E3C2;
+  width: 27px;
+  height: 25px;
+}
+
+.videoContainer .bottomRight {
+  position: absolute;
+  bottom: 19px;
+  right: 20px;
+  border-bottom: 1px solid #50E3C2;
+  border-right: 1px solid #50E3C2;
+  width: 27px;
+  height: 25px;
+}
+
+.videoContainer .bottomLeft {
+  position: absolute;
+  bottom: 19px;
+  left: 20px;
+  border-bottom: 1px solid #50E3C2;
+  border-left: 1px solid #50E3C2;
+  width: 27px;
+  height: 25px;
+}
+
+.videoContainer h2 {
+  text-align: center;
+  margin-top: 134px;
+}
+
+.videoContainer p {
+  text-align: center;
+}
+
+.videoContainer .videoElement {
+  width: 480px;
+  height: 320px;
+  margin-top: 35px;
+  margin-left: 104px;
+  display: none;
+}
+
+.videoContainer .showVideo {
+  display: block;
+}
+
+.hideSomething {
+  width: 480px;
+  height: 320px;
+  margin-top: 35px;
+  margin-left: 104px;
+  display: none;
+}
+
+.showSomething {
+  display: block;
+}
+
+/* button styles */
+.start {
+  border: 1px solid #572EE5;
+  border-radius: 25px;
+  border-radius: 25px;
+  background: transparent;
+  color: #572EE5;
+  font-family: Montserrat-Bold;
+  font-size: 13px;
+  text-align: center;
+  height: 50px;
+  width: 127px;
+  display: block;
+  margin: auto;
+  margin-top: 102px;
+}
+
+body.dark .start {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.cameraImageElements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -195px;
+  margin-top: 118px;
+  position: absolute;
+}
+
+.buttonAndMovie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.buttonAndMovie button {
+  background: none;
+  color: #572EE5;
+  font-family: Roboto-Medium;
+  font-size: 18px;
+  border: 1px solid #572EE5;
+  text-align: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-top: 24px;
+  margin-right: 25px;
+}
+
+.buttonAndMovie .step1 {
+  margin-left: 587px;
+}
+
+.buttonAndMovie img {
+  margin-left: 336px;
+}
+
+/* style line */
+.longLine {
+  width: 795.9px;
+  height: 6.9px;
+  background: #572EE5;
+  margin-left: 276px;
+  margin-top: 19px;
+}
+
+/*text styles */
+.titleCreateGifo {
+  font-family: Montserrat-Bold;
+  color: #572EE5;
+  font-size: 25px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.titleCreateGifo span {
+  color: #50E3C2;
+}
+
+.subtitleCreateGifo {
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  color: #000000;
+  line-height: 29px;
+  text-align: center;
+}
+
+/* nocturne mode */
+body.dark .videoContainer {
+  border: 1px solid #FFFFFF;
+}
+
+body.dark .videoContainer .titleCreateGifo {
+  color: #FFFFFF;
+}
+
+body.dark .videoContainer .subtitleCreateGifo {
+  color: #FFFFFF;
+}
+
+/* Title section */
+.titleImageSection {
+  margin-top: 10px;
+  margin-bottom: 8.1px;
+  display: block;
+  margin: auto;
+}
+
+.titleMyGifs {
+  color: #572EE5;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+body.dark .titleMyGifs {
+  color: #FFFFFF;
+}
+
+/* My own gifs section */
+.gifSourcesMyOwnGif {
+  margin-left: 156px;
+  margin-right: 157px;
+  margin-bottom: 78px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-rows: 200px;
+      grid-template-rows: 200px;
+  -ms-grid-columns: (260px)[4];
+      grid-template-columns: repeat(4, 260px);
+  padding: 0;
+  list-style: none;
+}
+
+.gifSourcesMyOwnGif li > img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlayMyOwnGif {
+  display: none;
+}
+
+.cardGifoMyOwnGif:hover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cardGifoMyOwnGif:hover .overlayMyOwnGif {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: RGBA(87, 46, 229, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.cardGifoMyOwnGif:hover .overlayMyOwnGif .infoTextGifs {
+  position: absolute;
+  bottom: 51px;
+  left: 15px;
+  color: #FFFFFF;
+}
+
+.cardGifoMyOwnGif:hover .overlayMyOwnGif .infoTextGifs :first-child {
+  font-family: Roboto-Regular;
+  font-size: 15px;
+}
+
+.cardGifoMyOwnGif:hover .overlayMyOwnGif .infoTextGifs :nth-child(2) {
+  font-family: Roboto-Bold;
+  font-size: 16px;
+}
+
+.cardGifoMyOwnGif:hover .overlayMyOwnGif .buttonsCardMyOwnGif {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.cardGifoMyOwnGif:hover .overlayMyOwnGif button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+}
+
+.MyGifsWithoutContent {
+  text-align: center;
+  display: block;
+  margin: auto;
+  color: #50E3C2;
+  margin-bottom: 136px;
+}
+
+.hideTextAndImage {
+  display: none;
+}
+
+/* Button style */
+.showMore {
+  background: transparent;
+  border: 1px solid #572EE5;
+  border-radius: 25px;
+  margin: auto;
+  display: block;
+  color: #572EE5;
+  font-family: Montserrat-Bold;
+  font-size: 13px;
+  width: 127px;
+  height: 50px;
+  margin-bottom: 79px;
+}
+
+body.dark .showMore {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+/* Title section */
+.titleFavouriteSection {
+  margin-top: 10px;
+  margin-bottom: 8.1px;
+  display: block;
+  margin: auto;
+}
+
+.titleFavourites {
+  color: #572EE5;
+  font-family: Montserrat-Bold;
+  text-align: center;
+  margin-bottom: 36px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+body.dark .titleFavourites {
+  color: #FFFFFF;
+}
+
+/* Favourite's section */
+.gifFavourites {
+  margin-left: 156px;
+  margin-right: 157px;
+  margin-bottom: 78px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-rows: (200px)[3];
+      grid-template-rows: repeat(3, 200px);
+  -ms-grid-columns: (260px)[4];
+      grid-template-columns: repeat(4, 260px);
+  padding: 0;
+  list-style: none;
+}
+
+.gifFavourites li > img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlayFavourite {
+  display: none;
+}
+
+.cardGifoFavourite:hover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cardGifoFavourite:hover .overlayFavourite {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: RGBA(87, 46, 229, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.cardGifoFavourite:hover .overlayFavourite .infoTextGifs {
+  position: absolute;
+  bottom: 51px;
+  left: 15px;
+  color: #FFFFFF;
+}
+
+.cardGifoFavourite:hover .overlayFavourite .infoTextGifs :first-child {
+  font-family: Roboto-Regular;
+  font-size: 15px;
+}
+
+.cardGifoFavourite:hover .overlayFavourite .infoTextGifs :nth-child(2) {
+  font-family: Roboto-Bold;
+  font-size: 16px;
+}
+
+.cardGifoFavourite:hover .overlayFavourite .buttonsCardFavourite {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.cardGifoFavourite:hover .overlayFavourite button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+}
+
+/* Button style */
+.showMore {
+  background: transparent;
+  border: 1px solid #572EE5;
+  border-radius: 25px;
+  margin: auto;
+  display: block;
+  color: #572EE5;
+  font-family: Montserrat-Bold;
+  font-size: 13px;
+  width: 127px;
+  height: 50px;
+  margin-bottom: 79px;
+}
+
+body.dark .showMore {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

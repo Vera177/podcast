@@ -1,0 +1,55 @@
+//first mobile!!!!!!
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    margin-bottom: 4px;
+  
+
+    #logoDesktopNormal{
+        width: 68px;
+        height: 60px;
+        display: block;
+        position: absolute;
+        left: 156px;
+        top: 18px;
+    }
+
+    .items {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        justify-content: space-between;
+        right: 156px;
+        top: 18px;
+        position: absolute;
+        
+        a {
+            text-decoration: none;
+            font-family: $textoMontserratBold, sans-serif;
+            color: $colorPurple;
+            font-size: 13px;
+            font-weight: 600;
+            
+            &:hover{ //umpersands
+                border-bottom: 2px solid $colorGreenTryAgain;
+            }
+
+            &:active {
+                color: $colorGreyNocturneMode;
+            }
+        }
+    }
+
+    .logos {
+        justify-content: flex-start; 
+    }
+
+    body.dark & {
+        a {
+            color: $colorWhite;
+        }
+    }
+}
+

@@ -1,0 +1,112 @@
+/* Title section */
+
+.titleFavouriteSection{
+    margin-top: 10px;
+    margin-bottom: 8.1px;
+    display: block;
+    margin: auto;
+}
+
+.titleFavourites {
+    color: $colorPurple;
+    font-family: $textoMontserratBold;
+    text-align: center;
+    margin-bottom: 36px;
+    font-size: 25px;
+    line-height: 30px;
+
+    body.dark & {
+        color: $colorWhite;
+    }
+}
+
+/* Favourite's section */
+
+.gifFavourites {
+
+    margin-left: 156px;
+    margin-right: 157px;
+    margin-bottom: 78px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(4, 260px);
+    padding: 0;
+    list-style: none;
+
+    li > img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.overlayFavourite {
+    display: none;
+}
+
+.cardGifoFavourite:hover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .overlayFavourite {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: RGBA(87,46,229,.5);
+        width: 100%;
+        height: 100%;
+
+            .infoTextGifs {
+                position: absolute;
+                bottom: 51px;
+                left: 15px;
+                color: $colorWhite;
+
+                :first-child {
+                    font-family: $textoRobotRegular;
+                    font-size: 15px;
+                }
+
+                :nth-child(2) {
+                    font-family: $textoRobotoBold;
+                    font-size: 16px;
+                }
+            }
+
+            .buttonsCardFavourite {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+            
+        button {
+            width: 32px;
+            height: 32px;
+            border: none;
+            background: transparent;
+        }
+    }
+}
+
+/* Button style */
+
+.showMore {
+    background: transparent;
+    border: 1px solid $colorPurple;
+    border-radius: 25px;
+    margin: auto;
+    display: block;
+    color: $colorPurple;
+    font-family: $textoMontserratBold;
+    font-size: 13px;
+    width: 127px;
+    height: 50px;
+    margin-bottom: 79px;
+
+    body.dark & {
+        color: $colorWhite;
+        border-color: $colorWhite;
+    }
+}

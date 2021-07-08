@@ -1,0 +1,25 @@
+.footerContainer {
+    margin-top: 49.5px;
+    margin-bottom: 41.5px;
+    margin-left: 156px;
+    margin-right: 158px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    body.dark & {
+        p {
+            color: $colorWhite;
+        }
+        .socialMedia {
+            color: $colorWhite;
+        }
+    }
+        
+    .socialMedia {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+}

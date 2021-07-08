@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Favoritos</title>
+</head>
+<body id="dark">
+
+    <!-- Header section -->
+
+    <header class="headerContainer">
+        <div class="logos">
+            <a id="logoDesktopNormal" href="index.html"><img id="imageLogo" src="./assets/logo-mobile.svg" alt="logogifos"></a>
+        </div>
+        <nav class="items">
+            <a href="#" id="btnSwitch" >MODO NOCTURNO</a>
+            <a href="favourites.html">FAVORITOS</a>
+            <a href="myGifs.html">MIS GIFOS</a>
+            <a href="createOwnGifs.html"><img src="./assets/button-crear-gifo.svg" id="createGifs" alt="creargifs"></a>
+        </nav>
+    </header>
+
+      <!-- Title section -->
+
+      <img class="titleFavouriteSection" src="./assets/icon-favoritos.svg" alt="icono mis gifos">
+      <h2 class="titleFavourites">Favoritos</h2>
+
+    <!-- Favourite's gif section -->
+
+    <ul class="gifFavourites" id="gifFavourites"></ul>
+
+    <!-- Trending gifos -->
+
+    <section class="trendingGifos">
+        <div class="textoTrendingGifos">
+            <h2 class="titleGIFOS">Trending GIFOS</h2>
+            <p class="checkThemOut">Mirá los últimos GIFOS de nuestra comunidad</p>
+        </div>
+        <div class="sliders">
+            <button id="buttonSliderLeft" class="buttonSliderLeft"><img class="arrowLeft" id="arrowLeft" src="./assets/button-slider-left.svg" alt="pasar gif a la izquierda"/></button>
+            <ul class="gifSources" id="gifSources"></ul>
+            <button id="buttonSliderRight" class="buttonSliderRight"><img class="arrowRight" id="arrowRight" src="./assets/Button-Slider-right.svg" alt="pasar gif a la derecha"></button>
+        </div>
+    </section>
+
+      <!-- Footer -->
+      <footer class="footerContainer">
+        <div class="socialMedia">
+            <p class="share">Compartir en:</p>
+            <a class="normal" href="https://www.facebook.com/"><img src="./assets/icon_facebook.svg" alt="Facebook"></a>
+            <a class="normal" href="https://twitter.com/home"><img src="./assets/icon-twitter.svg" alt="Twitter"></a>
+            <a class="normal" href="https://www.instagram.com/"><img src="./assets/icon_instagram.svg" alt="Instagram"></a>
+        </div>
+        <p class="copyright">© GIFOS 2021 All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/trendingGifos.js"></script>
+    <script src="js/nocturnemode.js"></script>
+    <script src="js/favourites.js"></script>
+</body>
+</html>
